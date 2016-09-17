@@ -2,5 +2,5 @@
 	path = reveal
 	url = https://github.com/hakimel/reveal.js
 [submodule "ace-builds"]
-	path = ace-builds
+	path = presentation-data/lib/ace-builds
 	url = https://github.com/ajaxorg/ace-builds.git
