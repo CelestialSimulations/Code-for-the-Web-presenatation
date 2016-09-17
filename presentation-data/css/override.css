@@ -6,6 +6,11 @@
 
 .reveal h2, .reveal h3, .reveal h4 {
   border-bottom: 1px solid #000;
+  padding-bottom: .3em;
+  margin-bottom: .5em;
+}
+.reveal li {
+  margin-bottom: 1em;
 }
 
 /*.reveal section img {
