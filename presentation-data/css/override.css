@@ -1,6 +1,14 @@
 @import url(../fonts/news-cycle/news-cycle.css);
 
-.reveal section img {
+.reveal section:not(:first-child) {
+  top: 0px !important;
+}
+
+.reveal h2, .reveal h3, .reveal h4 {
+  border-bottom: 1px solid #000;
+}
+
+/*.reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.0);
   border: 0px solid #222;
@@ -13,5 +21,5 @@
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   font-family: 'News Cycle', Helvetica, sans-serif;
   text-transform: none;
-}
+}*/
 

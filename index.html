@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 
         <!-- CUSTOMIZE METADATA HERE -->
-		<title>Presentation</title>
+		<title>Code for the Web</title>
 		<meta name="description" content="An html slideshow">
 		<meta name="author" content="Michael J. Harms">
 
@@ -15,9 +15,11 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
+		<!-- Add boostrap css (not included in reveal.js)-->
+		<link rel="stylesheet" href="presentation-data/css/bootstrap.min.css">
 
 		<link rel="stylesheet" href="reveal/css/reveal.css">
-		<link rel="stylesheet" href="reveal/css/theme/white.css" id="theme">
+		<link rel="stylesheet" href="reveal/css/theme/sky.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
@@ -31,8 +33,6 @@
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 
-        <!-- Add boostrap css (not included in reveal.js)-->
-        <link rel="stylesheet" href="presentation-data/css/bootstrap.min.css">
         <!-- CUSTOMIZE STYLESHEET HERE -->
 		<link rel="stylesheet" href="presentation-data/css/override.css">
 
@@ -44,6 +44,25 @@
 		<div class="reveal">
 			<!-- Any section element inside of this container is a slide -->
 			<div class="slides">
+
+								<section>
+									<h1>Code For The Web<br/><small>By Sofie Christie</small></h1>
+								</section>
+
+								<section>
+									<h3>What does a brower do?</h3>
+									<!--<hr/>-->
+									<p>
+										Excutes HTML
+									</p>
+								</section>
+
+								<section>
+									<div id="editorEmbed"></div>
+									<!--<a class="jsbin-embed foo" href="http://jsbin.com/iwovaj/74/embed?js,output">
+    Simple Animation Tests</a>
+<script src="http://static.jsbin.com/js/embed.js"></script>-->
+								</section>
 
                 <section>
                     <h4>Bootstrap-based slide layout</h4>
@@ -136,6 +155,7 @@
                     { src: 'presentation-data/lib/bootstrap.min.js' } ,
                     { src: 'presentation-data/lib/d3.min.js' },
                     { src: 'presentation-data/js/test-stream.js'},
+										{ src: 'presentation-data/js/editor.js'},
 					{ src: 'presentation-data/lib/bio-pv.min.js'},
 					{ src: 'presentation-data/js/pv-example.js'}
 
