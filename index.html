@@ -50,6 +50,84 @@
 								</section>
 
 								<section>
+									<section class="center-title">
+										<h2>Why is the web innovative?</h2>
+									</section>
+									<section>
+										<iframe style="margin-top: 0px" width="100%" height="600px" src="https://www.youtube.com/embed/Dxcc6ycZ73M"></iframe>
+									</section>
+									<!--<p>
+										You can share anything with anyone you want to
+									</p>
+									<p>
+										You have access to all of the infomation in the world, much more
+										than some
+									</p>
+									<p>
+
+									</p>-->
+								</section>
+
+								<section>
+									<h2>How was the internet created?</h2>
+								</section>
+
+								<section>
+									<h2>What makes the Internet work?</h2>
+									<ul>
+										<li class="fragment">
+											Through HTTPS, the language used to communicate the web browsers and servers
+										</li>
+										<li class="fragment">
+											HTTPs stands Hypertext Transfer Protocol
+										</li>
+										<li class="fragment">
+
+										</li>
+									</ul>
+									<aside class="notes">
+										How do computers all around the world actually communicate with each other?
+										First, it starts with a web browser. You type in an URL, or uniform resource locator.
+										When you go to the address, you send what is called a get request. Your computer, the
+										'local', communicates with another computer that could be thousands of miles away, which
+										is called a server, or 'remote', asking it for a website.
+
+										So what is a server excactly? It is a
+
+										It is important to realize that there is no actual 'cloud'. That actually all exists on
+										massive computers — servers. They transfer infomation when needed, but they do exist on
+										in phyiscal form.
+									</aside>
+								</section>
+
+								<section>
+									<h2 style="font-size: 1.5em">How does your computer commicate with the Internet?</h2>
+									<div class="row">
+										<div class="col-xs-6 fragment">
+											<p>
+												First, you start with your browser.
+											</p>
+											<img style="border: none; box-shadow: none; width: 25%" data-src="presentation-data/img/chrome-logo.png" />
+											<p>
+												When you type a URL into it, and hit enter, you are telling the browser to ask
+												a server for a webpage.
+											</p>
+										</div>
+										<div class="col-xs-6 fragment">
+											<p>
+												The server starts talking to computer in HTTP,
+												which is the language in which one computer asks another for documents
+											</p>
+											<!--<img s -->
+											<img style="border: none; box-shadow: none;" src="presentation-data/img/server.png" />
+											<p>
+												What transfers between the computer and server is mainly made up of 'GET requests'
+											</p>
+										</div>
+									</div>
+								</section>
+
+								<section>
 									<h2>What is a website?</h2>
 									<ul>
 										<li class="fragment">
@@ -81,11 +159,91 @@
 									</p>
 								</section>
 
+								<section style="padding: 0px;">
+									<h2 style="margin-bottom: 10px;">Demo</h2>
+									<div class="row triple-editor-view" align="middle">
+										<div class="col-xs-4 visible" data-state="html">
+											<p>HTML</p>
+<div id="html_editor">&lt;h2&gt;Header&lt;/h2&gt;
+&lt;p&gt;a paragraph&lt;/p&gt;
+&lt;div id="newParagraphs">&lt;div/>
+</div>
+										</div>
+										<div class="col-xs-4 fragment" data-state="css">
+											<p>CSS</p>
+<div id="css_editor">p, h2 {
+	color: red;
+	font-family: Arial;
+}
+h2 {
+	background-color: tan;
+}
+</div>
+										</div>
+										<div class="col-xs-4 fragment" data-state="js">
+											<p>Javascript</p>
+<div id="js_editor">for (var i = 0; i < 5; i++) {
+    $("#newParagraphs").append("&lt;p>new paragraph&lt;/p>");
+}
+$("h2").click(function() {
+    $("p").toggle({fade: 200});
+});
+</div>
+										</div>
+									</div>
+									<div id="wrap">
+										<iframe style="width: 100%; background: white" id="result"></iframe>
+									</div>
+									<aside class="notes">
+										HTML<br />
+										&lt;ul>
+										    &lt;li class="header">&lt;strong>John the Cow&lt;/strong>&lt;/li>
+										    &lt;li>Home&lt;/li>
+										    &lt;li>About&lt;/li>
+										    &lt;li>History&lt;/li>
+										&lt;/ul>
+										&lt;img id="cow" src="http://pngimg.com/upload/cow_PNG2129.png"/>
+										&lt;p class="quote">Quote of the day... &lt;br>&lt;strong>"MOO."&lt;/strong>&lt;/p>
+									</br>
+										CSS<br />
+										li {
+										    color: white;
+										    float: right;
+										    padding: 10px;
+										}
+										li.header {
+										    float: left;
+										}
+										li:hover {
+										    background-color: grey;
+										}
+										ul {
+										    list-style-type: none;
+										    overflow: hidden;
+										    background-color: #333;
+										}
+										.quote {
+										    text-align: center;
+										}
+										.quote strong {
+										    color: white;
+										    text-align: center;
+										    font-size: 100px;
+										    background-color: #333;
+										}
+										<br />
+										JS<br />
+										document.getElementById("cow").addEventListener("mouseover", function() {
+										   console.log("hey");
+										});
+						    </aside>
+								</section>
+
 								<section>
-									<div id="editorEmbed"></div>
-									<!--<a class="jsbin-embed foo" href="http://jsbin.com/iwovaj/74/embed?js,output">
-    Simple Animation Tests</a>
-<script src="http://static.jsbin.com/js/embed.js"></script>-->
+									<h2>Useful Links</h2>
+									<p>
+										<a href="https://www.smashingmagazine.com/wp-content/uploads/images/css3-cheat-sheet/css3-cheat-sheet.pdf">CSS Cheat Sheet</a>
+									</p>
 								</section>
 
                 <section>
@@ -178,6 +336,8 @@
                     { src: 'presentation-data/lib/jquery-1.11.2.min.js' } ,
                     { src: 'presentation-data/lib/bootstrap.min.js' } ,
                     { src: 'presentation-data/lib/d3.min.js' },
+										{ src: 'presentation-data/lib/ace-builds/src-noconflict/ace.js'},
+										{ src: 'presentation-data/lib/base64.js'},
                     { src: 'presentation-data/js/test-stream.js'},
 										{ src: 'presentation-data/js/editor.js'},
 					{ src: 'presentation-data/lib/bio-pv.min.js'},
