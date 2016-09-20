@@ -102,29 +102,77 @@
 
 								<section>
 									<h2 style="font-size: 1.5em">How does your computer commicate with the Internet?</h2>
-									<div class="row">
+									<div class="row" style="font-size: .7em">
 										<div class="col-xs-6 fragment">
 											<p>
 												First, you start with your browser.
 											</p>
-											<img style="border: none; box-shadow: none; width: 25%" data-src="presentation-data/img/chrome-logo.png" />
+											<img style="width: 25%" data-src="presentation-data/img/chrome-logo.png" />
 											<p>
 												When you type a URL into it, and hit enter, you are telling the browser to ask
 												a server for a webpage.
 											</p>
 										</div>
-										<div class="col-xs-6 fragment">
+										<div class="col-xs-6 fragment fade-up">
 											<p>
-												The server starts talking to computer in HTTP,
-												which is the language in which one computer asks another for documents
+												The server starts talking to computer in HTTP, and sends a 'GET request'
 											</p>
 											<!--<img s -->
-											<img style="border: none; box-shadow: none;" src="presentation-data/img/server.png" />
+											<img src="presentation-data/img/server.png" />
 											<p>
-												What transfers between the computer and server is mainly made up of 'GET requests'
+												The server will then return a document that's coded with <em>HTML</em>, <em>CSS</em>,
+												and <em>Javascript</em>
 											</p>
 										</div>
 									</div>
+								</section>
+
+								<section>
+									<h2>What is HTML?<img style="width: 100px; margin-bottom: 0" data-src="presentation-data/img/html-logo.png" /></h2>
+									<div class="row">
+										<div  class="col-xs-6" style="font-size: .8em">
+											<ul>
+												<li class="fragment">
+													It is a scripting language that provides the content of a webpage,
+												</li>
+												<li class="fragment">
+													For example, paragraphs, headers, images, and lists. These things
+													are called <strong>elements</strong>.
+												</li>
+												<li class="fragment">
+													It uses a tag system to reconize elements, like this:<br />
+													<code>&lt;(element)><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;some text<br />&lt;/(element)></code>
+												</li>
+											</ul>
+										</div>
+										<div  class="col-xs-6 fragment">
+											<p>
+												Here is an example:
+											</p>
+<pre><code><p>paragraph</p>
+<h1>Header</h1>
+<img src="example.jpg" />
+<!-- Unordered list -->
+<ul>
+   <li>list item 1</li>
+   <li>list item 2</li>
+</ul></code></pre>
+										<p>
+											However, this would look very dull, so we use <em><strong>CSS</strong></em>, a styling
+											language
+										</p>
+										</div>
+									</div>
+									<aside class="notes">
+										There are numerous elements that can be utilized in HTML, such as p(paragraph),
+										ul(unordered list), h1(the largest header), input(can create forms or sliders), img
+										(image), and many more.
+									</aside>
+								</section>
+
+								<section>
+									<h2>What is CSS?</h2>
+
 								</section>
 
 								<section>
@@ -132,23 +180,29 @@
 									<ul>
 										<li class="fragment">
 											A collection of files that get excuted in the browser, mainly in HTML, Javavscript,
-											and CSS format
+											and CSS.
 										</li>
 										<li class="fragment">
-											HTML is what the browser displays — can be paragraphs, headings, sliders, graphs,
-											images, anything. When developing, it is used as the structure of the website
+											HTML is the <strong>structure</strong>.
 										</li>
 										<li class="fragment">
-											We can see it if we use <strong>Developer Tools</strong> in our browser
+											CSS <strong>styles</strong> the page.
 										</li>
 										<li class="fragment">
-											However, you can see that the content changes when we interact with the page
+											Javascript controls the <strong>behavior</strong>.
 										</li>
 										<li class="fragment">
-											This is caused by Javascript, which controls the <strong>behavior</strong> of the
-											HTML
+											Let's see in action with <strong>Developer Tools</strong>
 										</li>
 									</ul>
+									<aside class="notes">
+										HTML is what the browser displays — can be paragraphs, headings, sliders, graphs,
+										images, anything. It is the <strong>structure</strong> of the
+										website. We can see it if we use <strong>Developer Tools</strong> in our browser.
+										However, you can see that the content changes when we interact with the page.
+										This is caused by Javascript, which controls the <strong>behavior</strong> of the
+										HTML. We can see the CSS, the code that <strong>styles</strong>, in the Styles tab.
+									</aside>
 								</section>
 
 								<section>
@@ -166,7 +220,7 @@
 											<p>HTML</p>
 <div id="html_editor">&lt;h2&gt;Header&lt;/h2&gt;
 &lt;p&gt;a paragraph&lt;/p&gt;
-&lt;div id="newParagraphs">&lt;div/>
+&lt;div id="newParagraphs">&lt;/div>
 </div>
 										</div>
 										<div class="col-xs-4 fragment" data-state="css">
