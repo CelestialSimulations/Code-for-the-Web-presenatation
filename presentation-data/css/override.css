@@ -4,10 +4,6 @@
   top: 0px !important;
 }
 
-.slides {
-  width: 1050px !important;
-}
-
 .reveal h2, .reveal h3, .reveal h4 {
   border-bottom: 1px solid #000;
   padding-bottom: .3em;
@@ -15,6 +11,9 @@
 }
 .reveal li {
   margin-bottom: 1em;
+}
+.reveal li:hover {
+  background-color: green;
 }
 .triple-editor-view {
   padding: -40px !important;
@@ -57,9 +56,9 @@
   border: none !important;
   box-shadow: none !important;
 }
-/*.center-title {
-  top: 266px;
-}*/
+.center-title > h2 {
+  border: none;
+}
 
 /*#result {
   margin-left: 10px;
