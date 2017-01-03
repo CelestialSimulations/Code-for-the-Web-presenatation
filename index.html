@@ -198,13 +198,12 @@
 								</section>-->
 
 								<section style="padding: 0px;">
-									<h2 style="margin-bottom: 10px;">Demo</h2>
+									<h2 style="margin-bottom: 10px;"><a href="http://codepen.io/SMCCoder/pen/oBNBNz">Demo</a></h2>
 									<div class="row triple-editor-view" align="middle">
 										<div class="col-xs-4 visible" data-state="html">
 											<p>HTML</p>
 <div id="html_editor">&lt;h2&gt;Header&lt;/h2&gt;
 &lt;p&gt;a paragraph&lt;/p&gt;
-&lt;div id="newParagraphs">&lt;/div>
 </div>
 										</div>
 										<div class="col-xs-4 fragment" data-state="css">
@@ -220,10 +219,7 @@ h2 {
 										</div>
 										<div class="col-xs-4 fragment" data-state="js">
 											<p>Javascript</p>
-<div id="js_editor">for (var i = 0; i < 5; i++) {
-    $("#newParagraphs").append("&lt;p>new paragraph&lt;/p>");
-}
-$("h2").click(function() {
+<div id="js_editor">$("h2").click(function() {
     $("p").toggle({fade: 200});
 });
 </div>
